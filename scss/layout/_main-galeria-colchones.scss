@@ -1,0 +1,87 @@
+.opciones {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: auto;
+}
+.elijo-espuma {
+	@include flexible(flex,column,center,center);
+	width: 300px;
+	height: 600px;
+	border: 3px double black;
+	border-radius: 10px;
+	a {
+		list-style: none;
+		text-decoration: none;
+		text-align: center;
+		color: $color_3;
+		font-size: x-large;
+		font-style: oblique;
+		border: 1px solid black;
+		border-radius: 10px;
+		background-color: $background-color_1;
+		padding: 20px 10px;
+		margin: 30px;
+		justify-content: center;
+		&:hover {
+			transform: rotate(-3deg);
+		}
+	}
+	img {
+		width: 200px;
+		padding: 3px;
+		justify-content: center;
+		align-items: center;
+	}
+	p {
+		width: 300px;
+		font-size: larger;
+		font-style: italic;
+		font-weight: 100;
+		color: $color_2;
+		text-align: center;
+		padding: 10px;
+	}
+}
+.poket {
+	margin-bottom: 20px;
+}
+.medidas {
+	@include flexible(flex,row,center,center);
+	margin: auto;
+	width: 100%;
+	height: auto;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 30px;
+	gap: 10px;
+	h2 {
+		width: 100%;
+		font-size: 30px;
+		font-style: oblique;
+		text-align: center;
+		margin-top: 30px;
+		padding: 20px 20px;
+	}
+	button {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		width: 150px;
+		height: 200px;
+		background-color:$background-color_1;
+		padding: 30px;
+		&:hover {
+			transform: skew(-3deg);
+		}
+	}
+	a {
+		margin: auto;
+		text-decoration: none;
+		text-align: center;
+		color:$color_3;
+		padding: 5px;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,20 @@
+@media (max-width:1024px){
+    .logonav{
+        width: 500px;
+    }
+}
+@media (max-width:1000px){
+    .logonav{
+        width: 450px;
+    }
+}
+@media (max-width:768px){
+    .logonav{
+        width: 480px;
+    }
+}
+@media (max-width:450px){
+    .logonav{
+        display: none;
+    }
+}

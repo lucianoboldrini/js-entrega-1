@@ -1,0 +1,241 @@
+
+
+.comienzo {
+	@include flexible(flex,column,center,center);
+	img {
+		width: 75px;
+	}
+}
+.tituloverificado {
+	margin: 30px 30px;
+}
+.titulopgnserv {
+	padding: 10px;
+	color: $color_1;
+	text-shadow: 2px 3px 5px black;
+	text-align: center;
+	font-size: 40px;
+	text-decoration: overline 2px solid black;
+}
+.titulopgns {
+	padding: 10px;
+	font-size: 30px;
+	font-style: oblique;
+	text-align: center;
+	margin-top: 20px;
+}
+.productos-nuest {
+	@include flexible(flex,column,center,center);	
+	flex-wrap: wrap;
+	margin: auto;
+	gap: 20px;
+}
+.verificado {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+	margin: auto;
+}
+.servicios {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 20px;
+	box-shadow: 0 4px 8px 0 black, 0 6px 20px rgba(0, 0, 0, 0.19);
+	float: left;
+	width: 200px;
+	height: 300px;
+	padding-bottom: 40px;
+	justify-content: center;
+	div {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+.pieservis {
+	width: 200px;
+	text-shadow: 2px 2px 5px black;
+	padding: 10px;
+	p {
+		text-align: center;
+	}
+}
+.caracteristicas {
+	font-style: oblique;
+	font-size: small;
+}
+.titulonuestrascosas {
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	h2 {
+		padding-bottom: 40px;
+		font-size: 30px;
+		font-style: oblique;
+		text-align: center;
+	}
+	h3{
+		padding-bottom: 40px;
+		font-size: 30px;
+		font-style: oblique;
+		text-align: center;
+	}
+}
+.nuestras-cosas {
+	@include flexible(flex,row,center,center);
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;	
+	margin-top: 20px;
+}
+.galeria {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	box-shadow: 0 4px 8px 0 black, 0 6px 20px rgba(0, 0, 0, 0.19);
+	width: 200px;
+	height: auto;
+	padding-bottom: 40px;
+	justify-content: center;
+	img {
+		width: 100%;
+		height: auto;
+		margin: auto;
+	}
+}
+.nue-cos {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	gap: 20px;
+}
+.pie {
+	&:hover {
+		border: 2px solid black;
+		transform: rotate(-3deg);
+		box-shadow: 10px 20px 20px black;
+	}
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-shadow: 2px 2px 5px black;
+	padding: 10px;
+	a {
+		text-decoration: none;
+		text-align: center;
+		color: $color_2;
+		text-shadow: 2px 2px 5px black;
+		padding: 10px;
+	}
+}
+.marcas-las {
+	@include flexible(flex,row,center,center);
+	width: 100%;	
+	flex-wrap: wrap;
+	h2 {
+		padding: 10px;
+		font-size: 30px;
+		font-style: oblique;
+		text-align: center;
+		margin-top: 30px;
+	}
+	img {
+		display: flex;
+		width: 105px;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		flex-wrap: wrap;
+	}
+}
+.img-hija-marca {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.testimonios {
+	@include flexible(flex,column,center,center);
+	width: 100%;
+}
+.testimonios__header {
+	@include flexible(flex,column,center,center);
+	margin: 50px 0px;
+	padding: 10px 20px;
+	
+	h1 {
+		font-size: 2.9rem;
+		font-weight: 50;
+		background-color: $background-color_1;
+		color:$color_3;
+		padding: 10px 20px;
+	}
+	span {
+		font-size: 2.2rem;
+		color: $color_2;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+	}
+}
+.testimonios__contenedor {
+	@include flexible(flex,row,center,center);
+	flex-wrap: wrap;
+	width: 100%;
+}
+.testimonios__caja {
+	width: 500px;
+	box-shadow: 2px 2px 30px black;
+	background-color: white;
+	padding: 20px;
+	margin: 15px;
+	cursor: pointer;
+}
+.perfil-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 30px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+.perfil {
+	display: flex;
+	align-items: center;
+}
+.name-user {
+	display: flex;
+	flex-direction: column;
+	strong {
+		color:$color_2;
+		font-size: 1.3rem;
+	}
+	span {
+		color: lightslategray;
+	}
+}
+.reseñas {
+	color: rgba(233, 211, 8, 0.596);
+}
+.caja-top {
+	@include flexible(flex,row,space-around,center);
+	margin-bottom: 20px;
+}
+.comentarios__clientes {
+	p {
+		color:$color_1;
+	}
+}
+.iframe-mm{
+	@include flexible(flex,row,center,center);
+	width: 100%;
+	gap: 50px;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+	
+
+}

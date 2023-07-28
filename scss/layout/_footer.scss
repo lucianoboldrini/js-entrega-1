@@ -1,0 +1,85 @@
+footer {@include flexible(flex,row,center,center);
+	margin: auto;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+	margin: auto;
+}
+
+.container__footer {
+	@include flexible(flex,row,center,center);
+	background-image: url(../assets/img/black-background-images-arranged-with-curved-shapes-vector.jpg);
+	flex-wrap: wrap;
+}
+.box__footer {
+	@include flexible(flex,column,center,center);
+	margin: 10px;
+	padding: 5px;	
+	.logo {
+		img {
+			width: 200px;
+			opacity: 20%;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	h2 {
+		color:$color_3;
+		font-weight: 700;
+		text-align: center;
+	}
+	a {	
+		@include flexible(flex,row,center,center);
+		list-style: none;
+		text-decoration: none;
+		margin-top: 10px;
+		color:$color_3;
+		font-weight: 600;
+		list-style: none;	
+		text-align: center;
+		&:hover {
+			opacity: 0.8;
+		}
+		.fab {
+			text-align: center;
+			font-size: 45px;
+		}
+	}
+	p {
+		color: $color_3;
+		text-align: center;
+	}
+}
+.terms {
+	@include flexible(flex,column,center,center);	
+	width: 200px;
+	max-width: 350px;	
+	font-weight: 500;
+	color:$color_3;
+	font-size: 25px;
+	p {
+		padding: 30px;
+		text-align: center;
+	}
+	img {
+		margin-top: 20px;
+		opacity: 80%;
+	}
+}
+.box__copyright {
+	@include flexible(flex,column,center,center);
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	p {
+		margin-top: 20px;
+		color:$color_3;
+		text-align: center;
+	}
+	hr {
+		text-align: center;
+		border: none;
+		height: 1px;
+		background-color: $color_3;
+	}
+}
